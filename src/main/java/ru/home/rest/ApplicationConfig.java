@@ -1,6 +1,6 @@
 package ru.home.rest;
 
-import org.eclipse.persistence.jaxb.rs.MOXyJsonProvider;
+//import org.eclipse.persistence.jaxb.rs.MOXyJsonProvider;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
@@ -15,7 +15,7 @@ import java.util.Set;
  *         http://www.antoniogoncalves.org
  *         --
  */
-@ApplicationPath("rs")
+//ApplicationPath("rs")
 public class ApplicationConfig extends Application {
 
   // ======================================
@@ -32,7 +32,7 @@ public class ApplicationConfig extends Application {
     HashSet<Class<?>> c = new HashSet<Class<?>>();
     c.add(DemoRestService.class);
 
-    c.add(MOXyJsonProvider.class);
+    ///c.add(MOXyJsonProvider.class);
 
     classes = Collections.unmodifiableSet(c);
   }
